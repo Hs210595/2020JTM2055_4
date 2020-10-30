@@ -26,20 +26,22 @@ read problem
 
 
 
-if [ $problem -eq 2]
-#Creating dummy file
-rm dummy.txt
-echo " Enter the size of dummy file to be created:"
-read size
-touch dummy.txt;
-x=0
-while [ $x -lt $size ]
-do echo a >> dummy.txt
-  x=`expr $x + 1`
-done
-fi
+        if [ $problem -eq 2]
+	then
+        #Creating dummy file
+        rm dummy.txt
+        echo " Enter the size of dummy file to be created:"
+        read size
+        touch dummy.txt;
+        x=0
+        while [ $x -lt $size ]
+        do echo a >> dummy.txt
+        x=`expr $x + 1`
+        done
+        fi
 
-if [ $problem -eq 4]
+       if [ $problem -eq 4]
+       then
 #reading file along with line number
 echo " Name of the file : "
 read file
